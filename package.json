@@ -1,0 +1,20 @@
+{
+  "name": "xbost-v10",
+  "version": "10.0.0",
+  "private": true,
+  "description": "XBOST: real-interface guided practice and optional fictional underworld campaign",
+  "engines": {
+    "node": ">=22 <27"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check server.js && node --check db.js && node --check achievements.js && node --check underworld.js",
+    "dev": "node scripts/dev.js",
+    "backup": "node scripts/backup.js",
+    "restore": "node scripts/restore.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}
